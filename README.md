@@ -3,3 +3,11 @@
 [![Coverage Status](https://coveralls.io/repos/github/hifiwi-fi/extract-meta/badge.svg?branch=master)](https://coveralls.io/github/hifiwi-fi/extract-meta?branch=master)
 
 A generalized metadata extractor for [breadcrum.net](https://breadcrum.net).
+
+## API
+
+WIP
+
+## See also
+
+- [sindresorhus/article-title](https://github.com/sindresorhus/article-title): used as the starting point for this module.
