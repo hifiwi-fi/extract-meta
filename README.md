@@ -19,4 +19,4 @@ const { title, summary, tags } = await extractMeta(document)
 ## See also
 
 - [sindresorhus/article-title](https://github.com/sindresorhus/article-title): used as the starting point for this module.
-- [hifiwi-fi/particular-pinboard](https://github.com/hifiwi-fi/particular-pinboard): Refactored to work with jsdom and integrated many ideas from many forks.
+- [resonance-cascade/particular-pinboard](https://github.com/resonance-cascade/particular-pinboard): Refactored to work with jsdom and integrated many ideas from many forks.
