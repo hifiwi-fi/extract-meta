@@ -15,7 +15,7 @@
     "prepublishOnly": "git push --follow-tags && gh-release -y",
     "test": "run-s test:*",
     "test-skip:standard": "standard",
-    "test:tap": "c8 tap --jobs-auto --reporter specy --no-bail --no-coverage --color --timeout 1200000",
+    "test:tap": "c8 tap --jobs-auto --reporter specy --no-bail --no-coverage --color",
     "version": "run-s version:*",
     "version:changelog": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:'",
     "version:git": "git add CHANGELOG.md"
@@ -41,13 +41,10 @@
     "gh-release": "^7.0.0",
     "npm-run-all2": "^6.0.0",
     "standard": "^17.0.0",
-    "tap": "^16.3.2"
+    "tap": "^16.3.2",
+    "jsdom": "^21.1.0"
   },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "undici": "^5.14.0",
-    "webassert": "^3.0.2"
-  },
+  "dependencies": {},
   "c8": {
     "reporter": [
       "lcov",
