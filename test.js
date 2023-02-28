@@ -10,7 +10,7 @@ const __dirname = desm(import.meta.url)
 tap.test('external api exposes all extracted fields', async (t) => {
   const html = await fsp.readFile(path.join(__dirname, 'lib', 'fixtures', 'html5rocks.html'), 'utf8')
   const { document } = (new JSDOM(html, { url: 'https://html5rocks.com' })).window
-  const { title, summary, tags } = await extractMeta(document)
+  const { title, summary, tags } = extractMeta(document)
 
   t.ok(title, 'the title is extracted')
   t.ok(summary, 'the title is extracted')
