@@ -4,3 +4,6 @@ sandbox.js
 package-lock.json
 tap-testdir-*
 coverage
+.tap
+
+
