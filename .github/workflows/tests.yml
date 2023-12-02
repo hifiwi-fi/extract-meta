@@ -30,7 +30,16 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         files: .tap/report/lcov.info
+        parallel: true
 
+  coverage:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close parallel build
+        uses: coverallsapp/github-action@v2
+        with:
+          parallel-finished: true
 
   automerge:
     needs: test
