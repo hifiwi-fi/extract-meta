@@ -13,23 +13,20 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest]
-        node: [19]
+        node: [19, lts/*]
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js ${{ matrix.node }}
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ matrix.node }}
     - run: npm i
     - run: npm test --color=always
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # for api access rate limiting
     - name: Coveralls
       uses: coverallsapp/github-action@v2
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        files: .tap/report/lcov.info
         parallel: true
 
   coverage:

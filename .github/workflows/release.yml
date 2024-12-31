@@ -8,7 +8,7 @@ on:
         required: true
 
 env:
-  node_version: 19
+  node: 19
   FORCE_COLOR: 1
 
 jobs:
@@ -19,10 +19,10 @@ jobs:
       with:
         # fetch full history so things like auto-changelog work properly
         fetch-depth: 0
-    - name: Use Node.js ${{ env.node_version }}
+    - name: Use Node.js ${{ env.node }}
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ env.node_version }}
+        node-version: ${{ env.node }}
         # setting a registry enables the NODE_AUTH_TOKEN env variable where we can set an npm token.  REQUIRED
         registry-url: 'https://registry.npmjs.org'
     - run: npm i

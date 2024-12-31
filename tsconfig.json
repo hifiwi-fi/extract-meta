@@ -1,0 +1,18 @@
+{
+  "extends": "@voxpelli/tsconfig/node20.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "lib": [
+      "es2023",
+      "DOM"
+    ]
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "coverage",
+    ".tap"
+  ]
+}
