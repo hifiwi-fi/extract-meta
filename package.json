@@ -15,7 +15,7 @@
     "prepublishOnly": "git push --follow-tags && gh-release -y",
     "test": "run-s test:*",
     "test-skip:standard": "standard",
-    "test:tap": "tap",
+    "test:node": "node --test",
     "version": "run-s version:*",
     "version:changelog": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:'",
     "version:git": "git add CHANGELOG.md"
@@ -40,19 +40,9 @@
     "gh-release": "^7.0.0",
     "npm-run-all2": "^7.0.1",
     "standard": "^17.0.0",
-    "tap": "^21.0.0",
     "jsdom": "^25.0.1"
   },
   "dependencies": {},
-  "tap": {
-    "serial": [],
-    "typecheck": false,
-    "allow-incomplete-coverage": true,
-    "coverage-report": [
-      "text",
-      "lcovonly"
-    ]
-  },
   "engines": {
     "node": ">=19",
     "npm": ">=8"
