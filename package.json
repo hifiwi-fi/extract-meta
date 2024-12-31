@@ -1,6 +1,6 @@
 {
   "name": "@breadcrum/extract-meta",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Extract various metadata from html",
   "type": "module",
   "module": "index.js",
