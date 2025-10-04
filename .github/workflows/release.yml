@@ -8,7 +8,7 @@ on:
         required: true
 
 env:
-  node: 19
+  node: lts/*
   FORCE_COLOR: 1
 
 jobs:
