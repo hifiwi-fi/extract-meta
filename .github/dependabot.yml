@@ -14,15 +14,8 @@ updates:
       typescript:
         patterns:
           - "typescript"
-          - "@types/*"
-          - "@typescript-eslint/*"
-          - "ts-*"
-      config:
-        patterns:
-          - "*eslint*"
-          - "*tsconfig*"
           - "@voxpelli/tsconfig"
-          - "neostandard"
+          - "@types/*"
   # Enable updates to github actions
   - package-ecosystem: "github-actions"
     directory: "/"
