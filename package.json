@@ -56,7 +56,6 @@
   },
   "c8": {
     "reporter": [
-      "lcov",
       "text"
     ]
   }

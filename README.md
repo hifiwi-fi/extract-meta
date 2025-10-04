@@ -1,6 +1,5 @@
 # @breadcrum/extract-meta
 [![Actions Status](https://github.com/hifiwi-fi/extract-meta/workflows/tests/badge.svg)](https://github.com/hifiwi-fi/extract-meta/actions)
-[![Coverage Status](https://coveralls.io/repos/github/hifiwi-fi/extract-meta/badge.svg?branch=master)](https://coveralls.io/github/hifiwi-fi/extract-meta?branch=master)
 [![latest version](https://img.shields.io/npm/v/@breadcrum/extract-meta.svg)](https://img.shields.io/npm/v/@breadcrum/extract-meta.svg)
 [![downloads](https://img.shields.io/npm/dm/@breadcrum/extract-meta.svg)](https://npmtrends.com/@breadcrum/extract-meta)
 

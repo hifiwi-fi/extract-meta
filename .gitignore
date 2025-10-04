@@ -5,3 +5,5 @@ package-lock.json
 .tap
 coverage
 .env
+*.map
+*.d.*ts
