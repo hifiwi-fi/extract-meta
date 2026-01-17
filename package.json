@@ -37,7 +37,7 @@
   "homepage": "https://github.com/hifiwi-fi/extract-meta#readme",
   "dependencies": {
     "@types/jsdom": "^27.0.0",
-    "@types/node": "^24.0.4"
+    "@types/node": "^25.0.0"
   },
   "devDependencies": {
     "@voxpelli/tsconfig": "^16.1.0",
