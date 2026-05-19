@@ -31,7 +31,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # for api access rate limiting
     - name: npm version && npm test
-      uses: bcomnes/npm-bump@v2
+      uses: bcomnes/npm-bump@v3
       with:
         git_email: bcomnes@gmail.com
         git_username: ${{ github.actor }}
